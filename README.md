@@ -41,10 +41,9 @@ $ ruby ex1b.rb
 $ ruby ex1c.rb
 ```
 
-_Output_
+_Output from running `$ ruby ex1b.rb`_
 
 ```
-$ ruby ex1b.rb
 
 def add_binary(a,b)
   s = a + b

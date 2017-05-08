@@ -29,7 +29,7 @@ This is done using the `parser_yylex` function in the _[parse.y](https://github.
 Initially, I thought the _parse.y_ file was available locally in my machine until I found out via this [StackOverflow's question](http://stackoverflow.com/questions/34226853/where-can-i-find-rubys-parse-y-file-on-my-system) that it's available in the [Ruby source code](https://github.com/ruby/ruby/blob/trunk/parse.y). The _parse.y_ file is a grammar rule file C. It contains a series of rules for the Ruby parser engine.
 
 ##### Experiment 1-1 Using Ripper to Tokenize Ruby Scripts
-The Ripper class is a tool that makes it easy to see the tokens Ruby creates for different files. It allows you to call the same tokenization and parsing code that Ruby uses to process text from code files. The Ripper class is available in Ruby version `1.9` and `2.x`.
+The Ripper class is a tool that makes it easy to see the tokens Ruby creates for different files. It allows you to call the same tokenization and parsing code that Ruby uses to process text from code files. The Ripper class is available in Ruby version `1.9` and `2.x`
 
 To see the output from Ripper on the ruby files in this repo, run:
 

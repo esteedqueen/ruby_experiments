@@ -34,17 +34,17 @@ The Ripper class is a tool that makes it easy to see the tokens Ruby creates for
 To see the output from Ripper on the ruby files in this repo, run:
 
 ```
-$ ruby lex1.rb
+$ ruby ex1a.rb
 
-$ ruby lex2.rb
+$ ruby ex1b.rb
 
-$ ruby lex3.rb
+$ ruby ex1c.rb
 ```
 
 _Output_
 
 ```
-$ ruby lex2.rb
+$ ruby ex1b.rb
 
 def add_binary(a,b)
   s = a + b

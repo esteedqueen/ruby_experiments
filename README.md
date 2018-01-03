@@ -9,4 +9,4 @@ To run the experiments locally, you're going to need:
 
 ## Chapter by Chapter Summaries & Experiments
 
-[Chapter 1 - Tokenization and Parsing](#tokenization-and-parsing)
+[Chapter 1 - Tokenization and Parsing](1_tokenization_and_parsing/README.md)

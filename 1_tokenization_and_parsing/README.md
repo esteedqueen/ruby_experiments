@@ -89,3 +89,21 @@ p add_binary(3,4)
 
 
 ## Parsing
+AKA: How Ruby Understands Your Code
+
+Ruby uses a parser to process token. The parser is generated with a parser generator.
+
+A parser generator takes a series of grammar rules as input; these describe the expected order and patterns in which tokens will appear.
+
+YACC and Bison are examples of parser generators. Ruby uses [Bison](https://en.wikipedia.org/wiki/GNU_bison).
+
+The _parse.y_ file can be considered the heart and soul of Ruby where the language itself is defined. In Ruby source code, the _[parse.y](https://github.com/ruby/ruby/blob/trunk/parse.y)_ C file contains Ruby's grammar rule. The grammar rule defines the actual syntax and grammar you have to use while writing Ruby code.
+
+Before your Ruby program is run, the Ruby build process uses Bison (a parser generator) to generate a parser code (parse.c) from the grammar rule in parse.y.
+
+At runtime (when you run your Ruby program), the generated parser code (parse.c) parses the tokens returned by the tokenizer code/method (remember the `parser_yylex` function in the _[parse.y](https://github.com/ruby/ruby/blob/trunk/parse.y)_ C file?).
+
+The tokenization and parsing processes actually occur simultaneously. The parsing process is done using the [LALR parser](https://en.wikipedia.org/wiki/LALR_parser) algorithm on the token streams from the tokenisation process.
+
+
+{I really love Pat's example of the Spanish-English parser so I want to come up with a mundane example of how the LALR algo works , so I can see if I can explain it for myself}
